@@ -5,12 +5,14 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.yudi.aplikasiinformasistasiunkai.API.ApiRequest;
 import com.yudi.aplikasiinformasistasiunkai.API.RetroServer;
 import com.yudi.aplikasiinformasistasiunkai.Adapter.StasiunkaiAdapter;
@@ -34,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView.LayoutManager layoutManagerStasiunKai;
     private List<StasiunKAI> listStasiunKai = new ArrayList<>();
 
+    private FloatingActionButton fab;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,9 +45,14 @@ public class MainActivity extends AppCompatActivity {
 
         rvStasiunKai = findViewById(R.id.rvStasiunKai);
         pbLoading = findViewById(R.id.pbLoading);
+        fab = findViewById(R.id.fab);
 
         layoutManagerStasiunKai = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         rvStasiunKai.setLayoutManager(layoutManagerStasiunKai);
+
+        fab.setOnClickListener(view -> {
+            startActivity(new Intent(MainActivity.this, AddActivity.class));
+        });
     }
 
     @Override

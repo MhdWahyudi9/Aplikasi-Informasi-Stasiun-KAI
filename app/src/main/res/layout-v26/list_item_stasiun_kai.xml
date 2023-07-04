@@ -16,19 +16,21 @@
             android:id="@+id/ivFoto"
             android:layout_width="150dp"
             android:layout_height="150dp"
+            android:contentDescription="@string/foto_stasiun"
             android:scaleType="centerCrop"
             android:src="@mipmap/ic_launcher"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ImageContrastCheck" />
 
         <TextView
             android:id="@+id/tvNama"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="20dp"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/ivFoto"
             app:layout_constraintTop_toTopOf="parent"
@@ -40,7 +42,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="20dp"
-            android:textSize="14sp"
+            android:textSize="12sp"
             android:textStyle="italic"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
@@ -52,7 +54,7 @@
             android:id="@+id/tvLuas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="4dp"
             android:textSize="12sp"
             android:textStyle="italic"
@@ -64,7 +66,7 @@
             android:id="@+id/tvSejarah"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="8dp"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="8dp"
             android:justificationMode="inter_word"
@@ -76,7 +78,6 @@
             app:layout_constraintTop_toBottomOf="@+id/tvLuas"
             tools:text="Stasiun Gambir terletak di Jakarta Pusat dan merupakan salah satu stasiun kereta api terbesar dan terpenting di Indonesia. Stasiun ini dibuka pada tanggal 8 Oktober 1884 dan sejak saat itu menjadi salah satu pusat transportasi utama di Jakarta. Stasiun Gambir memiliki arsitektur yang megah dan menjadi salah satu landmark penting di ibu kota."
             tools:ignore="VisualLintLongText" />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </com.google.android.material.card.MaterialCardView>
