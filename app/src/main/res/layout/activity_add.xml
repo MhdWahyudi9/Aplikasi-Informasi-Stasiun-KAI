@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Tambah Data Stasiun KAI"
+        android:text="@string/tambah_data_stasiun_kai"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,12 +25,15 @@
         android:layout_marginTop="64dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
+        android:hint="@string/masukkan_link_foto_stasiun"
+        android:importantForAutofill="no"
         android:inputType="text"
         android:minHeight="48dp"
-        android:hint="Masukkan Link Foto Stasiun"
+        android:textColorHint="#8D6E63"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="VisualLintTextFieldSize" />
 
     <EditText
         android:id="@+id/etNama"
@@ -40,12 +43,15 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
+        android:hint="@string/masukkan_nama_stasiun"
+        android:importantForAutofill="no"
         android:inputType="text"
         android:minHeight="48dp"
-        android:hint="Masukkan Nama Stasiun"
+        android:textColorHint="#8D6E63"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etLinkFoto" />
+        app:layout_constraintTop_toBottomOf="@+id/etLinkFoto"
+        tools:ignore="VisualLintTextFieldSize" />
 
     <EditText
         android:id="@+id/etKota"
@@ -55,13 +61,16 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
+        android:hint="@string/masukkan_kota_stasiun"
+        android:importantForAutofill="no"
         android:inputType="text"
         android:minHeight="48dp"
-        android:hint="Masukkan Kota Stasiun"
+        android:textColorHint="#8D6E63"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etNama" />
+        app:layout_constraintTop_toBottomOf="@+id/etNama"
+        tools:ignore="VisualLintTextFieldSize" />
 
     <EditText
         android:id="@+id/etLuas"
@@ -71,13 +80,16 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:ems="10"
+        android:hint="@string/masukkan_luas_stasiun"
+        android:importantForAutofill="no"
         android:inputType="number"
         android:minHeight="48dp"
-        android:hint="Masukkan Luas Stasiun"
+        android:textColorHint="#8D6E63"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etKota" />
+        app:layout_constraintTop_toBottomOf="@+id/etKota"
+        tools:ignore="VisualLintTextFieldSize" />
 
     <EditText
         android:id="@+id/etSejarah"
@@ -88,12 +100,15 @@
         android:layout_marginEnd="16dp"
         android:ems="10"
         android:gravity="start|top"
-        android:hint="Masukkan Deskripsi Sejarah Stasiun"
+        android:hint="@string/masukkan_deskripsi_sejarah_stasiun"
+        android:importantForAutofill="no"
         android:inputType="textMultiLine"
         android:minHeight="48dp"
+        android:textColorHint="#8D6E63"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etLuas" />
+        app:layout_constraintTop_toBottomOf="@+id/etLuas"
+        tools:ignore="VisualLintTextFieldSize" />
 
     <Button
         android:id="@+id/btnSimpan"
@@ -102,10 +117,11 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
-        android:text="Save"
+        android:text="@string/save"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etSejarah" />
+        app:layout_constraintTop_toBottomOf="@+id/etSejarah"
+        tools:ignore="VisualLintButtonSize" />
 
     <ProgressBar
         android:id="@+id/pbLoading"

@@ -1,4 +1,20 @@
 <resources>
     <string name="app_name">Aplikasi Informasi Stasiun KAI</string>
     <string name="foto_stasiun">Foto Stasiun</string>
+    <string name="deskripsi_sejarah_stasiun">Deskripsi Sejarah Stasiun :</string>
+    <string name="luas_stasiun">Luas Stasiun :</string>
+    <string name="kota">Kota :</string>
+    <string name="nama_stasiun">Nama Stasiun :</string>
+    <string name="detail_foto_stasiun">Detail Foto Stasiun</string>
+    <string name="tambah_data_stasiun_kai">Tambah Data Stasiun KAI</string>
+    <string name="masukkan_link_foto_stasiun">Masukkan Link Foto Stasiun</string>
+    <string name="masukkan_nama_stasiun">Masukkan Nama Stasiun</string>
+    <string name="masukkan_kota_stasiun">Masukkan Kota Stasiun</string>
+    <string name="masukkan_luas_stasiun">Masukkan Luas Stasiun</string>
+    <string name="masukkan_deskripsi_sejarah_stasiun">Masukkan Deskripsi Sejarah Stasiun</string>
+    <string name="save">Save</string>
+    <string name="daftar_informasi_stasiun_kai">Daftar Informasi Stasiun KAI</string>
+    <string name="aplikasi_informasi_stasiun_kai">Aplikasi Informasi Stasiun KAI</string>
+    <string name="ubah_data_stasiun_kai">Ubah Data Stasiun KAI</string>
+    <string name="update">Update</string>
 </resources>

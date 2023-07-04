@@ -19,6 +19,7 @@ import com.bumptech.glide.Glide;
 import com.yudi.aplikasiinformasistasiunkai.API.ApiRequest;
 import com.yudi.aplikasiinformasistasiunkai.API.RetroServer;
 import com.yudi.aplikasiinformasistasiunkai.Activity.AddActivity;
+import com.yudi.aplikasiinformasistasiunkai.Activity.DetailActivity;
 import com.yudi.aplikasiinformasistasiunkai.Activity.MainActivity;
 import com.yudi.aplikasiinformasistasiunkai.Activity.UpdateActivity;
 import com.yudi.aplikasiinformasistasiunkai.Model.StasiunKAI;
@@ -87,6 +88,17 @@ public class StasiunkaiAdapter extends RecyclerView.Adapter<StasiunkaiAdapter.VH
             tvKota = itemView.findViewById(R.id.tvKota);
             tvLuas = itemView.findViewById(R.id.tvLuas);
             tvSejarah = itemView.findViewById(R.id.tvSejarah);
+
+            itemView.setOnClickListener(view -> {
+                Intent sendData = new Intent(ctx, DetailActivity.class);
+                sendData.putExtra("xId", tvId.getText().toString());
+                sendData.putExtra("xNama", tvNama.getText().toString());
+                sendData.putExtra("xKota", tvKota.getText().toString());
+                sendData.putExtra("xLuas", luas);
+                sendData.putExtra("xSejarah", tvSejarah.getText().toString());
+                sendData.putExtra("xLinkFoto", linkFoto);
+                ctx.startActivity(sendData);
+            });
 
             itemView.setOnLongClickListener(view -> {
                 AlertDialog.Builder message = new AlertDialog.Builder(ctx);

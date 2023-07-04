@@ -84,7 +84,8 @@
             app:layout_constraintStart_toEndOf="@+id/ivFoto"
             app:layout_constraintTop_toBottomOf="@+id/tvLuas"
             tools:text="Stasiun Gambir terletak di Jakarta Pusat dan merupakan salah satu stasiun kereta api terbesar dan terpenting di Indonesia. Stasiun ini dibuka pada tanggal 8 Oktober 1884 dan sejak saat itu menjadi salah satu pusat transportasi utama di Jakarta. Stasiun Gambir memiliki arsitektur yang megah dan menjadi salah satu landmark penting di ibu kota."
-            tools:ignore="VisualLintLongText" />
+            tools:ignore="VisualLintLongText"
+            tools:targetApi="o" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </com.google.android.material.card.MaterialCardView>
