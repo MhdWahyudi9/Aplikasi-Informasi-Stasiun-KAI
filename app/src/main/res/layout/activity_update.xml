@@ -88,7 +88,7 @@
         android:layout_marginEnd="16dp"
         android:ems="10"
         android:gravity="start|top"
-        android:hint="Masukkan Nama Stasiun"
+        android:hint="Masukkan Deskripsi Sejarah Stasiun"
         android:inputType="textMultiLine"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -96,7 +96,7 @@
         app:layout_constraintTop_toBottomOf="@+id/etLuas" />
 
     <Button
-        android:id="@+id/btnSimpan"
+        android:id="@+id/btnUpdate"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -106,4 +106,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etSejarah" />
+
+    <ProgressBar
+        android:id="@+id/pbLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
